@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aplicacao-repo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aplicacao-repo
+  template:
+    metadata:
+      labels:
+        app: aplicacao-repo
+    spec:
+      containers:
+      - name: aplicacao-repo
+        # Esta é a linha que nossa pipeline vai mudar:
+        image: ojotaaa/aplicacao-repo:IMAGE_TAG
+        ports:
+        - containerPort: 80
