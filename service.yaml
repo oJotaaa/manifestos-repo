@@ -5,6 +5,6 @@ metadata:
 spec:
   selector:
     app: aplicacao-repo
-    ports:
-      port: 8080
-      targetPort: 80
+  ports:
+    port: 8080
+    targetPort: 80
