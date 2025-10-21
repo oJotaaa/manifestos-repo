@@ -15,6 +15,6 @@ spec:
       containers:
       - name: aplicacao-repo
         # Esta é a linha que nossa pipeline vai mudar:
-        image: ojotaaa/aplicacao-repo:929e12c1fa5e228ecb017f1d0792a3da115130f7
+        image: ojotaaa/aplicacao-repo:ce4a28905ae0f9d14a78fe220ab824953894b2f1
         ports:
         - containerPort: 80
